@@ -71,7 +71,7 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(202, 202, 202, 0.80); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(228, 228, 228, 0.8); /*this uses opacity of 75% for the background color*/
 	text-align: center;
 }
 
@@ -107,9 +107,9 @@ nav{
 	font-weight: 600;
 	font-style: normal;
 	font-size: x-large;
-	margin: 0 auto;
+	margin: 5 auto;
 	border:rgb(23, 82, 76);
-	border-width: 3px 0;
+	border-width: 3px;
 	text-align: center;
 	margin-top: 1em;
 }    
@@ -125,9 +125,11 @@ nav a{
 
 a{
 	color: #283a1b;
+	background: #7c9474;
 	text-decoration: none;
 	font-weight: bold;
 	}
+
 a:hover{
 	color:#7c9474;
 	background: #283a1b;
