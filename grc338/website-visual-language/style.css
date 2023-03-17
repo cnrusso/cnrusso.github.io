@@ -42,14 +42,15 @@ header {
 	display: grid;
 	grid-template-columns: auto auto;
 	background: rgb(250,250,250);
-	padding: .75rem .75rem .25rem .75rem;
+	padding: .75rem;
 	border-bottom: rgb(116,71,47) double;
     border-bottom-style: thin;
 	}
 
 h1 {
 	width: 20em;
-	padding: 1rem 0rem 0rem 1.5rem
+	padding: 1rem 0rem 0rem 1.5rem;
+	margin: 1.2em 0em 0em 0em;
 	}
 
 h2, h3, h4 {
@@ -59,19 +60,19 @@ h2, h3, h4 {
 	}
 
 h2 {
-	font-size: 3em;
+	font-size: 2.8em;
 	margin: 0.5em 0em 0.25em;
 	}
 	
 h3 {
-	font-size: 2.1em;
+	font-size: 2em;
 	margin: 0.5em 0em;
 	}
 
 h4 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	color: rgb(116,71,47);
-}
+	}
 
 a {
 	text-decoration: none;
@@ -96,24 +97,25 @@ main.menu ul {
 	}	
 
 main.menu ul li {
-	margin: 1em 0em 1em;
+	margin: .5em 0em 1em;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
 	}	
 
 p {
-	margin: 0rem 0rem 1rem;
+	margin: 1rem 0rem 1rem;
 	font-size: 1.2em;
 	}
 
 p.footer {
 	color: rgb(250,250,250);
-}
+	}
 	
 p.description {
 	grid-column: 1/2;
 	margin: 0em;
+	min-height: 4em;
 	}
 	
 p.price {
@@ -123,11 +125,11 @@ p.price {
 	text-align: right;
 	font-weight: bold;
 	margin: 0em;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	}
 	
 nav ul li {
-	margin-top: .5em;
+	margin-top: 1em;
 	margin-bottom: .5em;
 	margin-right: 0.5em;
 	font-size: 1.2em;
@@ -136,12 +138,16 @@ nav ul li {
 	
 nav ul li a {
 	color: rgb(116,71,47);
-	padding: 0.25rem 0.5rem 0.25rem;
-	margin-top: 1rem;
+	border-radius: 5px;
+	padding: .25em .5em;
+	
 	}
 
 nav ul li.selected a {
-	font-weight: 1000;
+	color: rgb(250,250,250);
+	background-color: rgb(116,71,47);
+	border-radius: 5px;
+	padding: .25em .5em;
 	}
 
 p.slogan {
@@ -149,7 +155,7 @@ p.slogan {
 	font-family: "regina", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	margin: 6rem 0.4rem 13rem;
+	margin: 5rem 0.4rem 12rem;
 	color: rgb(250,250,250);
 	line-height: 0.75em;
 	}
@@ -173,28 +179,42 @@ footer p {
 	margin: 0;
 	}
 
-article.contact {
-	margin-top: 2em;
+article {
+	margin: 2em 0em;
 	border-top: rgb(116,71,47) double;
 	}
 
-@media screen and (min-width: 60em) {
+article.contact {
+	margin: 2em 0em;
+	border-top: rgb(116,71,47) double;
+	}
 
+img {
+	border-radius: 5px;
+	}
+
+@media screen and (min-width: 60em) {
+h1 {
+	margin: 0em;
+}
 article {
 	max-width: 40em;
 	margin-right: auto;
 	margin-left: auto;
+	font-size: 1.3em;
 	}
-article.location {
+article.contact {
 	display: grid;
 	grid-template-columns: auto auto;
-	}
+	grid-template-rows: auto auto;
+	margin-left: 5em;
+}
 main.menu ul {
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 0em 6em;
 	}
-nav ul li {
+nav ul li {	
 	display: inline;
 	font-size: 2em;
 	}
@@ -202,9 +222,15 @@ nav ul {
 	margin: 2em 1em 2em 2em;
 	}
 nav ul li a {
-	padding: 0.5em 0.5em 0.25em;
+	padding: .25em .5em;
+	}
+nav ul li.selected a{
+	border-radius: 10px;
+}
+img {
+	border-radius: 10px;
 	}
 p.slogan {
 	margin: 6rem 0.4rem 17rem;
-}
+	}
 }
